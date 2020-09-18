@@ -7,9 +7,151 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Учебный проект "Велосипеды"</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/open-sans-v18-cyrillic-regular.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-v18-cyrillic-700.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-v18-cyrillic-600.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-v18-cyrillic-300.woff2" as="font">
 
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div style="display:none;">
+    <include src="source/img/sprite.svg"></include>
+  </div>
+  <header>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <a href="#" class="main-nav__logo">
+          <svg class="main-nav__img" width="68" height="21">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <button type="button" class="main-nav__toggle hamburger">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">О нас
+            <svg class="main-nav__arrow" width="25" height="25">
+              <use xlink:href="#"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Виды велосипедов
+            <svg class="main-nav__arrow" width="25" height="25">
+              <use xlink:href="#"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Видео про велосипеды
+            <svg class="main-nav__arrow" width="25" height="25">
+              <use xlink:href="#"></use>
+            </svg>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Контакты
+            <svg class="main-nav__arrow" width="25" height="25">
+              <use xlink:href="#"></use>
+            </svg>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="promo">
+      <div class="promo__about-us">
+        <a href="#" class="promo__logo">
+          <svg class="promo__img" width="68" height="21">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <h1 class="promo__head">Мы продаем велосипеды</h1>
+        <p class="promo__desc">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      </div>
+      <form class="form" action="#" method="post">
+        <p class="form__desc">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <fieldset class="form__fieldset">
+          <div class="custom-input">
+            <label for="name" class="custom-input__label"></label>
+            <input class="custom-input__input" type="text" name="name" id="name" placeholder="Введите Ваше Имя"
+              required="">
+          </div>
+          <div class="custom-input">
+            <label for="phone" class="custom-input__label"></label>
+            <input class="custom-input__input" type="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+              name="phone" id="phone" placeholder="Введите Ваш номер телефона">
+          </div>
+        </fieldset>
+        <button class="form__button" type="submit">Подобрать велосипед мечты</button>
+      </form>
+    </section>
+    <section class="facts">
+      <ul class="facts__list">
+        <li class="facts__item">
+          <span class="facts__number">01</span>
+          <p class="facts__desc">Самый широкий выбор велосипедов!</p>
+        </li>
+        <li class="facts__item">
+          <span class="facts__number">02</span>
+          <p class="facts__desc">Доставка велосипедов по всей России!</p>
+        </li>
+        <li class="facts__item">
+          <span class="facts__number">03</span>
+          <p class="facts__desc">Большой выбор крутых аксессуаров!</p>
+        </li>
+        <li class="facts__item">
+          <span class="facts__number">04</span>
+          <p class="facts__desc">Профессиональные консультации!</p>
+        </li>
+      </ul>
+    </section>
+    <section class="kinds-of-bikes">
+      <h2 class="kinds-of-bikes__head">Виды велосипедов</h2>
+      <ul class="kinds-of-bikes__list">
+        <li class="bike-card">
+          <img src="#" alt="Дорожный велосипед" width="342" height="503" class="bike-card__img">
+          <p class="bike-card__desc">Дорожный велосипед</p>
+        </li>
+        <li class="bike-card">
+          <img src="#" alt="Горный велосипед" width="342" height="503" class="bike-card__img">
+          <p class="bike-card_desc">Горный велосипед</p>
+        </li>
+        <li class="bike-card">
+          <img src="#" alt="Детский велосипед" width="342" height="503" class="bike-card__img">
+          <p class="bike-card__desc">Детский велосипед</p>
+        </li>
+      </ul>
+    </section>
+    <section class="video">
+      <h2 class="video__head">Видео про велосипеды</h2>
+      <p class="video__desc">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <section class="address">
+      <h2 class="address__head">Как нас найти?</h2>
+      <address class="address__desc">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</address>
+    </section>
+    <section class="map">
+      <iframe src="" class="map__pic" width="957" height="530"></iframe>
+    </section>
+    <section class="contacts">
+      <div class="contacts__item">
+        <svg class="contacts__img" width="26" height="20">
+          <use xlink:href="#mail"></use>
+        </svg>
+        <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__contact">puteshestviemechta@gmail.ru</a>
+      </div>
+      <div class="contacts__item">
+        <svg class="contacts__img" fill="none" width="22" height="23">
+          <use xlink:href="#phone"></use>
+        </svg>
+        <a href="tel:+7(499)784-684-46" class="contacts__contact">+7 (499) -784-684-46</a>
+      </div>
+    </section>
+  </footer>
+
 </body>
 
 </html>

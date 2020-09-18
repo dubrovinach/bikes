@@ -7,9 +7,161 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Учебный проект "Велосипеды"</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/open-sans-v18-cyrillic-regular.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-v18-cyrillic-700.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-v18-cyrillic-600.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-v18-cyrillic-300.woff2" as="font">
 
 </head><body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div style="display:none;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="logo" viewBox="0 0 68 21">
+<path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"></path>
+<path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6"></path>
+<path d="M8.44787 9.97498L8.35241 10.0704H8.30469L8.44787 9.97498Z" fill="#0AD9C6"></path>
+<path d="M38.2092 5.61453L29.0823 12.316L31.1955 15.194L40.3224 8.49252L38.2092 5.61453Z" fill="#0AD9C6"></path>
+<path d="M26.6674 3C22.8035 3 19.6243 6.13028 19.6243 10.0431C19.6243 13.9071 22.7546 17.0863 26.6674 17.0863C30.5313 17.0863 33.7105 13.956 33.7105 10.0431C33.7105 6.17919 30.5313 3 26.6674 3ZM26.6674 13.2712C24.8577 13.2712 23.4393 11.8039 23.4393 10.0431C23.4393 8.23344 24.9066 6.81503 26.6674 6.81503C28.4282 6.81503 29.8955 8.28235 29.8955 10.0431C29.8955 11.8039 28.4282 13.2712 26.6674 13.2712Z" fill="#0AD9C6"></path>
+<path d="M43.6396 3C39.7756 3 36.5964 6.13028 36.5964 10.0431C36.5964 13.9071 39.7267 17.0863 43.6396 17.0863C47.5035 17.0863 50.6827 13.956 50.6827 10.0431C50.6338 6.17919 47.5035 3 43.6396 3ZM43.6396 13.2712C41.8299 13.2712 40.4115 11.8039 40.4115 10.0431C40.4115 8.23344 41.8788 6.81503 43.6396 6.81503C45.4004 6.81503 46.8677 8.28235 46.8677 10.0431C46.8677 11.8039 45.4004 13.2712 43.6396 13.2712Z" fill="#0AD9C6"></path>
+<path d="M67.5977 0.238647V20.2841H64.2568V9.87956L61.4409 7.20683L59.3409 5.15456V20.2841H56V0.238647H59.2932H59.3409L63.2545 4.0091L64.2568 4.96365V0.238647H67.5977Z" fill="#0AD9C6"></path>
+</symbol><symbol id="mail" viewBox="0 0 26 20">
+<path d="M24.2273 0H1.77273C0.768182 0 0 0.764706 0 1.76471V18.2353C0 19.2353 0.768182 20 1.77273 20H24.2273C25.2318 20 26 19.2353 26 18.2353V1.76471C26 0.764706 25.2318 0 24.2273 0ZM24.2273 17L19.5591 12.3529C19.2045 12 18.6727 12 18.3182 12.3529C17.9636 12.7059 17.9636 13.2353 18.3182 13.5882L22.9864 18.2353H3.01362L7.68182 13.5882C8.03636 13.2353 8.03636 12.7059 7.68182 12.3529C7.32727 12 6.79547 12 6.44092 12.3529L1.77273 17V5.70585L12.4091 13.7059C12.5864 13.8236 12.7637 13.8823 12.9409 13.8823C13.1182 13.8823 13.2954 13.8236 13.4727 13.7059L24.2273 5.70585V17ZM24.2273 1.76471V3.4706L12.9409 11.8235L1.77273 3.4706V1.76471H24.2273Z" fill="#0AD9C6"></path>
+</symbol><symbol id="phone" viewBox="0 0 22 24">
+<path d="M3.45616 6.74199C3.37161 5.54391 3.63734 4.36374 4.34096 3.41452C4.95096 2.554 5.74517 2.08404 6.70245 1.8094C7.50874 1.57018 8.03721 1.86329 8.26974 2.75972C8.60192 4.09991 9.07604 5.44018 9.24817 6.85129C9.30253 7.47252 8.90089 8.35089 8.46604 8.80328C7.37589 9.87655 7.60238 10.6576 8.42982 12.282C8.6865 12.8057 9.09418 13.7111 9.88839 14.9096C10.7158 16.1169 11.1537 16.7649 12.2167 16.2152C13.3974 15.6212 14.2581 16.0032 15.1489 16.9621C15.7529 17.6546 16.4172 18.2495 17.0212 18.942C17.8939 19.9718 17.8547 20.6818 17.1722 21.4091C15.9431 22.7486 13.9138 23.1913 12.4039 22.2943C11.5705 21.8058 10.74 21.1664 10.0787 20.4206C7.16453 17.1002 5.06272 13.2388 3.79741 8.88089C3.59508 8.14421 3.50146 7.39872 3.45616 6.74199Z" stroke="#0AD9C6" stroke-width="2" stroke-miterlimit="10"></path>
+</symbol></svg>
+  </div>
+  <header>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <a href="#" class="main-nav__logo">
+          <svg class="main-nav__img" width="68" height="21">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <button type="button" class="main-nav__toggle hamburger">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">О нас
+            <svg class="main-nav__arrow" width="25" height="25">
+              <use xlink:href="#"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Виды велосипедов
+            <svg class="main-nav__arrow" width="25" height="25">
+              <use xlink:href="#"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Видео про велосипеды
+            <svg class="main-nav__arrow" width="25" height="25">
+              <use xlink:href="#"></use>
+            </svg>
+        </a></li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Контакты
+            <svg class="main-nav__arrow" width="25" height="25">
+              <use xlink:href="#"></use>
+            </svg>
+        </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="promo">
+      <div class="promo__about-us">
+        <a href="#" class="promo__logo">
+          <svg class="promo__img" width="68" height="21">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <h1 class="promo__head">Мы продаем велосипеды</h1>
+        <p class="promo__desc">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      </div>
+      <form class="form" action="#" method="post">
+        <p class="form__desc">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <fieldset class="form__fieldset">
+          <div class="custom-input">
+            <label for="name" class="custom-input__label"></label>
+            <input class="custom-input__input" type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
+          </div>
+          <div class="custom-input">
+            <label for="phone" class="custom-input__label"></label>
+            <input class="custom-input__input" type="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" name="phone" id="phone" placeholder="Введите Ваш номер телефона">
+          </div>
+        </fieldset>
+        <button class="form__button" type="submit">Подобрать велосипед мечты</button>
+      </form>
+    </section>
+    <section class="facts">
+      <ul class="facts__list">
+        <li class="facts__item">
+          <span class="facts__number">01</span>
+          <p class="facts__desc">Самый широкий выбор велосипедов!</p>
+        </li>
+        <li class="facts__item">
+          <span class="facts__number">02</span>
+          <p class="facts__desc">Доставка велосипедов по всей России!</p>
+        </li>
+        <li class="facts__item">
+          <span class="facts__number">03</span>
+          <p class="facts__desc">Большой выбор крутых аксессуаров!</p>
+        </li>
+        <li class="facts__item">
+          <span class="facts__number">04</span>
+          <p class="facts__desc">Профессиональные консультации!</p>
+        </li>
+      </ul>
+    </section>
+    <section class="kinds-of-bikes">
+      <h2 class="kinds-of-bikes__head">Виды велосипедов</h2>
+      <ul class="kinds-of-bikes__list">
+        <li class="bike-card">
+          <img src="#" alt="Дорожный велосипед" width="342" height="503" class="bike-card__img">
+          <p class="bike-card__desc">Дорожный велосипед</p>
+        </li>
+        <li class="bike-card">
+          <img src="#" alt="Горный велосипед" width="342" height="503" class="bike-card__img">
+          <p class="bike-card_desc">Горный велосипед</p>
+        </li>
+        <li class="bike-card">
+          <img src="#" alt="Детский велосипед" width="342" height="503" class="bike-card__img">
+          <p class="bike-card__desc">Детский велосипед</p>
+        </li>
+      </ul>
+    </section>
+    <section class="video">
+      <h2 class="video__head">Видео про велосипеды</h2>
+      <p class="video__desc">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <section class="address">
+      <h2 class="address__head">Как нас найти?</h2>
+      <address class="address__desc">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</address>
+    </section>
+    <section class="map">
+      <iframe src="" class="map__pic" width="957" height="530"></iframe>
+    </section>
+    <section class="contacts">
+      <div class="contacts__item">
+        <svg class="contacts__img" width="26" height="20">
+          <use xlink:href="#mail"></use>
+        </svg>
+        <a href="mailto:puteshestviemechta@gmail.ru" class="contacts__contact">puteshestviemechta@gmail.ru</a>
+      </div>
+      <div class="contacts__item">
+        <svg class="contacts__img" fill="none" width="22" height="23">
+          <use xlink:href="#phone"></use>
+        </svg>
+        <a href="tel:+7(499)784-684-46" class="contacts__contact">+7 (499) -784-684-46</a>
+      </div>
+    </section>
+  </footer>
+
 </body>
 
 </html>
