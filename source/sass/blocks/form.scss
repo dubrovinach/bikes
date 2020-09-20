@@ -1,0 +1,19 @@
+.form {
+  width: 35%;
+}
+
+.form__desc {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  color: $white;
+  text-align: center;
+}
+
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}

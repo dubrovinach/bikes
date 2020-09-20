@@ -1,0 +1,57 @@
+.video {
+  text-align: center;
+  background-color: $background-dark;
+  position: relative;
+  min-height: 706px;
+}
+
+.video__img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.video__wrapper {
+  position: relative;
+}
+
+.video__head {
+  margin: 0;
+  padding-top: 120px;
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  color: $white;
+}
+
+.video__desc {
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: $white;
+}
+
+.video__button {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  display: block;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  background-color: $green-accent;
+  border: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    transform: translateX(-50%);
+    border: 10px solid transparent;
+    border-left: 10px solid #070707;
+  }
+}

@@ -1,0 +1,72 @@
+.bike-card {
+  position: relative;
+
+  &--road {
+    &::after {
+      content: "";
+      display: block;
+      height: 180px;
+      width: 180px;
+      position: absolute;
+      top: 15%;
+      right: 70%;
+      z-index: 0;
+      border: $green-accent solid 27px;
+      border-radius: 50%;
+    }
+  }
+
+  &--mountain {
+    padding-top: 90px;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 47px;
+      width: 47px;
+      position: absolute;
+      z-index: 2;
+      left: -20px;
+      top: 69px;
+      border: 8px solid $green-accent;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 47px;
+      width: 47px;
+      position: absolute;
+      z-index: 2;
+      right: -20px;
+      bottom: 69px;
+      border: 8px solid $green-accent;
+    }
+  }
+
+  &--kid {
+    &::after {
+      content: "";
+      display: block;
+      height: 95px;
+      width: 95px;
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      z-index: 2;
+      border: $green-accent solid 17px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.bike-card__img {
+  position: relative;
+  z-index: 1;
+}
+
+.bike-card__desc {
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 600;
+}

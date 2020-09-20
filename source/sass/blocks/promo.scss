@@ -1,0 +1,38 @@
+.promo {
+  background-image: url("../../img/promo-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 825px;
+  position: relative;
+}
+
+.promo__container {
+  display: flex;
+  flex-direction: row;
+  min-height: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo__about-us {
+  width: 36%;
+}
+
+.promo__head {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  font-size: 46px;
+  line-height: 64px;
+  font-weight: 700;
+  color: $white;
+}
+
+.promo__desc {
+  margin: 0;
+  padding: 0;
+  color: $white;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+}
