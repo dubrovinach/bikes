@@ -1,10 +1,13 @@
 .contacts {
-  padding-top: 151px;
+  padding-top: 249px;
   text-align: center;
 }
 
 .contacts__head {
   margin: 0;
+  margin-left: 38%;
+  margin-right: 30%;
+  width: 24%;
   font-size: 30px;
   line-height: 30px;
   font-weight: 600;
@@ -12,11 +15,37 @@
 }
 
 .contacts__desc {
-  padding-top: 20px;
+  width: 47%;
+  margin: 0;
+  margin-left: 25.9%;
+  padding-top: 30px;
   padding-bottom: 41px;
   font-size: 17px;
   line-height: 31px;
   font-weight: 400;
   font-style: normal;
   color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    padding-top: 154px;
+  }
+
+  .contacts__head {
+    font-size: 24px;
+  }
+
+  .contacts__desc {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 4.9%;
+    width: 90%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .contacts__head {
+    font-size: 18px;
+  }
 }

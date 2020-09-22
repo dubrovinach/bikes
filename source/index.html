@@ -17,7 +17,7 @@
     <include src="source/img/sprite.svg"></include>
   </div>
   <header>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--nojs main-nav--closed">
       <div class="container main-nav__container">
         <div class="main-nav__wrapper">
           <a href="#" class="main-nav__logo">
@@ -31,29 +31,29 @@
         </div>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">О нас
+            <a href="#facts" class="main-nav__link">О нас
               <svg class="main-nav__arrow" width="25" height="25">
-                <use xlink:href="#"></use>
+                <use xlink:href="#arrow"></use>
               </svg>
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Виды велосипедов
+            <a href="#kinds-of-bikes" class="main-nav__link">Виды велосипедов
               <svg class="main-nav__arrow" width="25" height="25">
-                <use xlink:href="#"></use>
+                <use xlink:href="#arrow"></use>
               </svg>
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Видео про велосипеды
+            <a href="#video" class="main-nav__link">Видео про велосипеды
               <svg class="main-nav__arrow" width="25" height="25">
-                <use xlink:href="#"></use>
+                <use xlink:href="#arrow"></use>
               </svg>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Контакты
+            <a href="#contacts" class="main-nav__link">Контакты
               <svg class="main-nav__arrow" width="25" height="25">
-                <use xlink:href="#"></use>
+                <use xlink:href="#arrow"></use>
               </svg>
           </li>
         </ul>
@@ -72,27 +72,29 @@
           <h1 class="promo__head">Мы продаем велосипеды</h1>
           <p class="promo__desc">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </div>
-        <form class="form" action="#" method="post">
-          <p class="form__desc">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <fieldset class="form__fieldset">
-            <div class="custom-input">
-              <label for="name" class="custom-input__label"></label>
-              <input class="custom-input__input" type="text" name="name" id="name" placeholder="Введите Ваше Имя"
-                required="">
-            </div>
-            <div class="custom-input">
-              <label for="phone" class="custom-input__label"></label>
-              <input class="custom-input__input" type="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
-                name="phone" id="phone" placeholder="Введите Ваш номер телефона">
-            </div>
-          </fieldset>
-          <button class="form__button global-button" type="submit">Подобрать велосипед мечты</button>
-        </form>
+        <div class="promo__form">
+          <form class="form" action="#" method="post">
+            <p class="form__desc">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+            <fieldset class="form__fieldset">
+              <div class="custom-input">
+                <label for="name" class="custom-input__label"></label>
+                <input class="custom-input__input" type="text" name="name" id="name" placeholder="Введите Ваше Имя"
+                  required="">
+              </div>
+              <div class="custom-input">
+                <label for="phone" class="custom-input__label"></label>
+                <input class="custom-input__input" type="tel" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"
+                  name="phone" id="phone" placeholder="Введите Ваш номер телефона">
+              </div>
+            </fieldset>
+            <button class="form__button global-button" type="submit">Подобрать велосипед мечты</button>
+          </form>
+        </div>
       </div>
     </section>
     <section class="facts">
       <div class="container">
-        <h2 class="facts__head">Несколько фактов о нас</h2>
+        <h2 class="facts__head"><a id="facts"></a>Несколько фактов о нас</h2>
         <ul class="facts__list">
           <li class="facts__item">
             <span class="facts__number">01</span>
@@ -114,21 +116,45 @@
       </div>
     </section>
     <section class="kinds-of-bikes">
-      <div class="container">
-        <h2 class="kinds-of-bikes__head">Виды велосипедов</h2>
+      <div class="container kinds-of-bikes__container">
+        <h2 class="kinds-of-bikes__head"><a id="kinds-of-bikes"></a>Виды велосипедов</h2>
         <ul class="kinds-of-bikes__list">
           <li class="bike-card bike-card--road">
-            <img src="img/road-bike-desktop.jpg" alt="Дорожный велосипед" width="342" height="503"
-              class="bike-card__img">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/road-bike-mobile.webp 1x, img/road-bike-mobile-2x.webp 2x">
+              <source type="image/webp" srcset="img/road-bike-desktop.webp 1x, img/road-bike-desktop-2x.webp 2x">
+
+              <source media="(max-width: 1023px)" srcset="img/road-bike-mobile.jpg 1x, img/road-bike-mobile-2x.jpg 2x">
+              <img src="img/road-bike-desktop.jpg" srcset="img/road-bike-desktop-2x.jpg 2x" alt="Дорожный велосипед"
+                class="bike-card__img">
+            </picture>
             <p class="bike-card__desc">Дорожный велосипед</p>
           </li>
           <li class="bike-card bike-card--mountain">
-            <img src="img/mountain-bike-desktop.jpg" alt="Горный велосипед" width="342" height="503"
-              class="bike-card__img">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile-2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/mountain-bike-desktop.webp 1x, img/mountain-bike-desktop-2x.webp 2x">
+
+              <source media="(max-width: 1023px)"
+                srcset="img/mountain-bike-mobile.jpg 1x, img/mountain-bike-mobile-2x.jpg 2x">
+              <img src="img/mountain-bike-desktop.jpg" srcset="img/mountain-bike-desktop-2x.jpg 2x"
+                alt="Горный велосипед" class="bike-card__img">
+            </picture>
             <p class="bike-card__desc">Горный велосипед</p>
           </li>
           <li class="bike-card bike-card--kid">
-            <img src="img/kid-bike-desktop.jpg" alt="Детский велосипед" width="342" height="503" class="bike-card__img">
+            <picture>
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/kid-bike-mobile.webp 1x, img/kid-bike-mobile-2x.webp 2x">
+              <source type="image/webp" srcset="img/kid-bike-desktop.webp 1x, img/kid-bike-desktop-2x.webp 2x">
+
+              <source media="(max-width: 1023px)" srcset="img/kid-bike-mobile.jpg 1x, img/kid-bike-mobile-2x.jpg 2x">
+              <img src="img/kid-bike-desktop.jpg" srcset="img/kid-bike-desktop-2x.jpg 2x" alt="Детский велосипед"
+                class="bike-card__img">
+            </picture>
             <p class="bike-card__desc">Детский велосипед</p>
           </li>
         </ul>
@@ -136,17 +162,30 @@
     </section>
     <section class="video">
       <div class="container">
-        <h2 class="video__head">Видео про велосипеды</h2>
+        <h2 class="video__head"><a id="video"></a>Видео про велосипеды</h2>
         <p class="video__desc">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-        <img src="img/video-desktop.jpg" alt="Выбор велосипеда" class="video__img" width="929" height="522">
-        <button type="button" class="video__button"></button>
+        <div class="video__player">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/video-mobile.webp 1x, img/video-mobile-2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/video-tablet.webp 1x, img/video-tablet-2x.webp 2x">
+            <source type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop-2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/video-mobile.jpg 1x, img/video-mobile-2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/video-tablet.jpg 1x, img/video-tablet-2x.jpg 2x">
+            <img src="img/video-desktop.jpg" srcset="img/video-desktop-2x.jpg" alt="Выбор велосипеда"
+              class="video__img">
+          </picture>
+          <button type="button" class="video__button"></button>
+        </div>
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <section class="contacts">
       <div class="container">
-        <h2 class="contacts__head">Как нас найти?</h2>
+        <h2 class="contacts__head"><a id="contacts"></a>Как нас найти?</h2>
         <address class="contacts__desc">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</address>
         <div class="map">
           <iframe
@@ -161,7 +200,7 @@
             <a href="mailto:puteshestviemechta@gmail.ru" class="connection__contact">puteshestviemechta@gmail.ru</a>
           </div>
           <div class="connection__item">
-            <svg class="connection__img" fill="none" width="22" height="23">
+            <svg class="connection__img" fill="none" width="22" height="25">
               <use xlink:href="#phone"></use>
             </svg>
             <a href="tel:+7(499)784-684-46" class="connection__contact">+7 (499) -784-684-46</a>
@@ -170,7 +209,8 @@
       </div>
     </section>
   </footer>
-
+  <script src="js/script.js"></script>
+  <script src="js/button.js"></script>
 </body>
 
 </html>
