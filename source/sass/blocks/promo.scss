@@ -1,26 +1,29 @@
 .promo {
   background-image: url("../../img/promo-desktop.jpg");
   background-repeat: no-repeat;
+  background-position: top center;
   background-size: cover;
   min-height: 825px;
   position: relative;
 }
 
 .promo__container {
+  width: 71.4%;
+  padding-top: 25.9%;
+  padding-bottom: 15%;
   display: flex;
   flex-direction: row;
   min-height: inherit;
-  align-items: center;
   justify-content: space-between;
 }
 
 .promo__about-us {
-  width: 36%;
+  width: 42%;
 }
 
 .promo__head {
   margin: 0;
-  padding-top: 30px;
+  padding-top: 26px;
   padding-bottom: 24px;
   font-size: 46px;
   line-height: 64px;
@@ -35,4 +38,68 @@
   font-size: 20px;
   line-height: 32px;
   font-weight: 300;
+}
+
+.promo__form {
+  padding-top: 3px;
+  width: 37.2%;
+}
+
+@media (max-width: $tablet-width) {
+  .promo {
+    min-height: 340px;
+    background-image: url("../../img/promo-tablet.jpg");
+    background-size: contain;
+  }
+
+  .promo__head {
+    font-size: 30px;
+    line-height: 42px;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .promo__desc {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .promo__logo {
+    display: none;
+  }
+
+  .promo__container {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo__about-us {
+    margin: 0 auto;
+    padding-top: 134px;
+    padding-bottom: 80px;
+    width: 55%;
+    text-align: center;
+  }
+
+  .promo__form {
+    padding-top: 70px;
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .promo {
+    background-image: url("../../img/promo-mobile.jpg");
+  }
+
+  .promo__about-us {
+    padding-top: 85px;
+    width: 87%;
+  }
 }

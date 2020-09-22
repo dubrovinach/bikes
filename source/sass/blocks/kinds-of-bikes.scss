@@ -1,8 +1,13 @@
 .kinds-of-bikes {
-  padding-top: 150px;
-  padding-bottom: 147px;
+  padding-top: 183px;
+  padding-bottom: 115px;
   text-align: center;
   background-color: $background-light-grey;
+}
+
+.kinds-of-bikes__container {
+  margin-left: 5.2%;
+  margin-right: 3.2%;
 }
 
 .kinds-of-bikes__list {
@@ -17,8 +22,34 @@
 
 .kinds-of-bikes__head {
   margin: 0;
-  padding-bottom: 60px;
+  margin-left: 28.5%;
+  width: 40%;
+  padding-bottom: 50px;
   font-size: 30px;
   line-height: 30px;
   font-weight: 600;
+}
+
+@media (max-width: $tablet-width) {
+  .kinds-of-bikes {
+    padding-top: 50px;
+    padding-bottom: 19px;
+  }
+
+  .kinds-of-bikes__container {
+    margin-left: 8.4%;
+    margin-right: 8.3%;
+  }
+
+  .kinds-of-bikes__head {
+    margin-left: 30%;
+    padding-bottom: 30px;
+    font-size: 24px;
+    line-height: 41px;
+    font-weight: 600;
+  }
+
+  .kinds-of-bikes__list {
+    justify-content: space-around;
+  }
 }

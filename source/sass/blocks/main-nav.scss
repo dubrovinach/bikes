@@ -5,7 +5,8 @@
 }
 
 .main-nav__container {
-  min-height: 62px;
+  min-height: 83px;
+  width: 71%;
   display: flex;
   align-items: center;
 }
@@ -15,15 +16,16 @@
 }
 
 .main-nav__list {
+  padding-left: 2%;
+  padding-right: 1.5%;
   list-style: none;
-  padding: 0;
   margin: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
+  width: 99%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -33,6 +35,10 @@
 
 .main-nav__item {
   padding-bottom: 9px;
+
+  &:nth-child(4n + 4) {
+    padding-right: 0;
+  }
 }
 
 .main-nav__link {
@@ -41,4 +47,105 @@
   line-height: 32px;
   font-weight: 300;
   color: $white;
+}
+
+@media (max-width: $tablet-width) {
+  .main-nav__link {
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+    color: #48494d;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 100%;
+  }
+
+  .main-nav__logo {
+    display: none;
+  }
+
+  .main-nav__list {
+    padding-top: 48px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    padding-bottom: 138px;
+    flex-direction: column;
+    border-bottom: none;
+  }
+
+  .main-nav__item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #f6f6f6;
+  }
+
+  .main-nav__container {
+    width: auto;
+    min-height: 50px;
+    display: block;
+    background-color: $white;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    width: auto;
+  }
+
+  .main-nav__toggle {
+    margin-left: auto;
+  }
+
+  .main-nav__arrow {
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+  }
+
+  .main-nav--nojs {
+    position: static;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--closed .main-nav__container {
+    background-color: transparent;
+  }
+
+  .main-nav--closed .main-nav__logo {
+    display: block;
+    padding-top: 25px;
+    padding-left: 21px;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+    padding-top: 100px;
+  }
+
+  .main-nav--nojs .main-nav__logo {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav--closed .main-nav__logo {
+    padding-top: 25px;
+    padding-left: 16px;
+  }
 }

@@ -1,7 +1,3 @@
-.form {
-  width: 35%;
-}
-
 .form__desc {
   margin: 0;
   padding-bottom: 20px;
@@ -16,4 +12,22 @@
   border: none;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .form {
+    width: 42.1%;
+  }
+
+  .form__desc {
+    font-size: 18px;
+    padding-bottom: 30px;
+    color: $black;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form {
+    width: 90%;
+  }
 }

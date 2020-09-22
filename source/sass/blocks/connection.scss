@@ -1,19 +1,19 @@
 .connection {
-  padding-top: 41px;
+  padding-top: 32px;
   padding-bottom: 98px;
+  margin-left: 27%;
+  margin-right: 28.5%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .connection__item {
   display: flex;
   flex-direction: row;
   align-items: center;
-
-  &:first-child {
-    padding-right: 90px;
-  }
+  padding-bottom: 20px;
 }
 
 .connection__img {
@@ -26,4 +26,27 @@
   line-height: 22px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: $tablet-width) {
+  .connection {
+    margin-left: 13.6%;
+    margin-right: 15%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .connection {
+    padding-bottom: 18px;
+    flex-direction: column;
+  }
+
+  .connection__item {
+    padding-bottom: 22px;
+    justify-content: center;
+
+    &:first-child {
+      padding-right: 0;
+    }
+  }
 }

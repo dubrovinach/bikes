@@ -3,12 +3,69 @@
   line-height: 21px;
   font-weight: 600;
   color: $black;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-left: 48px;
-  padding-right: 48px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 100%;
   border: none;
   background-color: $green-accent;
   border-radius: 6px;
+}
+
+@media (max-width: $tablet-width) {
+  .hamburger {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    background-color: $green-accent;
+  }
+
+  .main-nav--closed .hamburger::before {
+    content: "";
+    position: absolute;
+    background-color: $black;
+    top: 18px;
+    left: 14px;
+    width: 22px;
+    height: 1px;
+    box-shadow: 0 7px 0 0 $black, 0 13px 0 0 $black;
+  }
+
+  .main-nav--opened .hamburger {
+    background-color: $white;
+  }
+
+  .main-nav--opened .hamburger::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    right: 7px;
+    width: 33px;
+    height: 1px;
+    background-color: rgba(20, 21, 23, 0.2);
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  .main-nav--opened .hamburger::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    right: 9px;
+    width: 33px;
+    height: 1px;
+    background-color: rgba(20, 21, 23, 0.2);
+    box-shadow: none;
+    transform: rotate(-46deg);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .global-button {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
 }
