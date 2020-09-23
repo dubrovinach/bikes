@@ -125,3 +125,26 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .bike-card {
+    padding-bottom: 44px;
+  }
+
+  .bike-card__desc {
+    padding-top: 17px;
+  }
+
+  .bike-card--road {
+    &::after {
+      top: 200px;
+      left: -25px;
+    }
+  }
+
+  .bike-card--kid {
+    &::after {
+      right: -16px;
+    }
+  }
+}

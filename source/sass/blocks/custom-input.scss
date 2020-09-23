@@ -27,3 +27,9 @@
     padding-left: 23px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .custom-input__input {
+    padding-left: 25px;
+  }
+}
