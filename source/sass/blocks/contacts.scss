@@ -45,7 +45,18 @@
 }
 
 @media (max-width: $mobile-width) {
+  .contacts {
+    padding-top: 119px;
+  }
+
   .contacts__head {
     font-size: 18px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .contacts__desc {
+    margin-left: 7.9%;
+    width: 84%;
   }
 }

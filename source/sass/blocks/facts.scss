@@ -81,13 +81,41 @@
 }
 
 @media (max-width: $mobile-width) {
+  .facts {
+    margin: 0;
+    padding-bottom: 29px;
+  }
+
+  .facts__head {
+    margin: 0;
+    width: 100%;
+  }
+
+  .facts__desc {
+    font-size: 18px;
+    padding-top: 8px;
+
+    &--choose {
+      padding-top: 16px;
+    }
+  }
+
+  .facts__number {
+    margin-right: 0;
+  }
+
   .facts__list {
     flex-direction: column;
     justify-content: center;
   }
 
   .facts__item {
-    padding-bottom: 47px;
-    width: 100%;
+    padding-bottom: 58px;
+    width: 90%;
+    margin: 0 auto;
+
+    &--choose {
+      padding-bottom: 31px;
+    }
   }
 }

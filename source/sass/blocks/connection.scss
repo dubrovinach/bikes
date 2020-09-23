@@ -38,15 +38,22 @@
 @media (max-width: $mobile-width) {
   .connection {
     padding-bottom: 18px;
+    padding-top: 30px;
     flex-direction: column;
+    align-items: center;
+    margin-left: 9.6%;
+    margin-right: 7%;
   }
 
   .connection__item {
     padding-bottom: 22px;
-    justify-content: center;
 
     &:first-child {
       padding-right: 0;
+    }
+
+    &--phone {
+      margin-right: 18px;
     }
   }
 }

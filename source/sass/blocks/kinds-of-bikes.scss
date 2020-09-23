@@ -53,3 +53,15 @@
     justify-content: space-around;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .kinds-of-bikes {
+    padding-top: 47px;
+    padding-bottom: 12px;
+  }
+
+  .kinds-of-bikes__head {
+    margin: 0;
+    width: 100%;
+  }
+}
