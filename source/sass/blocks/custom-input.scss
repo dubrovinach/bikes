@@ -2,7 +2,7 @@
   padding-bottom: 18px;
 }
 
-.custom-input__input {
+.custom-input input {
   background: $white;
   border: 1px solid #c9ccd4;
   border-radius: 4px;
@@ -14,6 +14,14 @@
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
+
+  &:hover {
+    border-color: $green-accent;
+  }
+
+  &:focus {
+    border-color: $green-accent;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -21,7 +29,7 @@
     padding-bottom: 20px;
   }
 
-  .custom-input__input {
+  .custom-input input {
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 23px;
@@ -29,7 +37,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .custom-input__input {
+  .custom-input input {
     padding-left: 25px;
   }
 }

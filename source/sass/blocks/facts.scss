@@ -16,7 +16,7 @@
   justify-content: space-around;
 }
 
-.facts__head {
+.facts div h2 {
   width: 45%;
   margin: 0;
   margin-left: 28.3%;
@@ -28,7 +28,7 @@
   font-weight: 600;
 }
 
-.facts__number {
+.facts__list li span {
   margin-right: 9px;
   font-size: 28px;
   line-height: 38px;
@@ -36,7 +36,7 @@
   color: $green-accent;
 }
 
-.facts__desc {
+.facts__item p {
   margin: 0;
   padding-top: 15px;
   font-size: 22px;
@@ -57,7 +57,7 @@
     padding-bottom: 30px;
   }
 
-  .facts__head {
+  .facts div h2 {
     width: 55%;
     margin-left: 22%;
     padding-bottom: 30px;
@@ -65,7 +65,7 @@
     line-height: 41px;
   }
 
-  .facts__desc {
+  .facts__item p {
     padding-top: 17px;
   }
 
@@ -86,21 +86,23 @@
     padding-bottom: 29px;
   }
 
-  .facts__head {
+  .facts div h2 {
     margin: 0;
     width: 100%;
   }
 
-  .facts__desc {
+  .facts__item p {
     font-size: 18px;
     padding-top: 8px;
+  }
 
+  .facts__item .facts__desc {
     &--choose {
       padding-top: 16px;
     }
   }
 
-  .facts__number {
+  .facts__list li span {
     margin-right: 0;
   }
 
