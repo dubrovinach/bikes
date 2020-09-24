@@ -5,7 +5,7 @@
   min-height: 706px;
 }
 
-.video__img {
+.video__player img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -20,10 +20,10 @@
   min-height: 424px;
 }
 
-.video__head {
+.video div h2 {
   width: 37%;
   margin: 0;
-  margin-left: 31.7%;
+  margin-left: 31.2%;
   margin-right: 20%;
   padding-top: 120px;
   padding-bottom: 20px;
@@ -33,7 +33,7 @@
   color: $white;
 }
 
-.video__desc {
+.video div p {
   width: 27%;
   margin: 0 auto;
   padding-bottom: 57px;
@@ -67,6 +67,10 @@
   &--is-active {
     border: 2px solid #070707;
   }
+
+  &:hover {
+    border-color: $white;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -79,17 +83,17 @@
     min-height: 197px;
   }
 
-  .video__head {
+  .video div h2 {
     padding-top: 70px;
     font-size: 24px;
   }
 
-  .video__desc {
+  .video div p {
     padding-bottom: 40px;
     width: 60%;
   }
 
-  .video__button {
+  .video__player button {
     width: 91px;
     height: 91px;
     top: 48.4%;
@@ -109,20 +113,20 @@
     position: relative;
   }
 
-  .video__img {
+  .video__player img {
     position: static;
     transform: none;
     top: 42%;
   }
 
-  .video__head {
+  .video div h2 {
     width: 95%;
     margin-left: 1%;
     margin-right: 1%;
     padding-top: 0;
   }
 
-  .video__desc {
+  .video div p {
     width: 95%;
     padding-bottom: 0;
   }
@@ -136,7 +140,7 @@
     transform: translateX(-50%);
   }
 
-  .video__button {
+  .video__player button {
     width: 65px;
     height: 65px;
     top: 47px;

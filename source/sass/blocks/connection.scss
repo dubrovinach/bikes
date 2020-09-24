@@ -9,23 +9,27 @@
   justify-content: space-between;
 }
 
-.connection__item {
+.connection div {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-bottom: 20px;
 }
 
-.connection__img {
+.connection div svg {
   margin-right: 15px;
 }
 
-.connection__contact {
+.connection div a {
   text-decoration: none;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    color: $green-accent;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -45,13 +49,15 @@
     margin-right: 7%;
   }
 
-  .connection__item {
+  .connection div {
     padding-bottom: 22px;
 
     &:first-child {
       padding-right: 0;
     }
+  }
 
+  .connection__item {
     &--phone {
       margin-right: 18px;
     }

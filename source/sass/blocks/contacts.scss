@@ -3,9 +3,9 @@
   text-align: center;
 }
 
-.contacts__head {
+.contacts div h2 {
   margin: 0;
-  margin-left: 38%;
+  margin-left: 37.6%;
   margin-right: 30%;
   width: 24%;
   font-size: 30px;
@@ -14,7 +14,7 @@
   color: #1f1f1f;
 }
 
-.contacts__desc {
+.contacts div address {
   width: 47%;
   margin: 0;
   margin-left: 25.9%;
@@ -32,11 +32,12 @@
     padding-top: 154px;
   }
 
-  .contacts__head {
+  .contacts div h2 {
     font-size: 24px;
+    margin-left: 38%;
   }
 
-  .contacts__desc {
+  .contacts div address {
     padding-bottom: 20px;
     padding-top: 20px;
     margin-left: 4.9%;
@@ -49,13 +50,13 @@
     padding-top: 119px;
   }
 
-  .contacts__head {
+  .contacts div h2 {
     font-size: 18px;
     margin: 0;
     width: 100%;
   }
 
-  .contacts__desc {
+  .contacts div address {
     margin-left: 7.9%;
     width: 84%;
   }

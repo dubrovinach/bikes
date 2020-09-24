@@ -63,12 +63,12 @@
   }
 }
 
-.bike-card__img {
+.bike-card img {
   position: relative;
   z-index: 1;
 }
 
-.bike-card__desc {
+.bike-card p {
   width: 75%;
   margin: 0;
   margin-left: 13%;
@@ -85,7 +85,7 @@
     padding-bottom: 50px;
   }
 
-  .bike-card__desc {
+  .bike-card p {
     margin: 0;
     width: 100%;
     padding-top: 15px;
@@ -131,7 +131,7 @@
     padding-bottom: 44px;
   }
 
-  .bike-card__desc {
+  .bike-card p {
     padding-top: 17px;
   }
 

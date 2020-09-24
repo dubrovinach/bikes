@@ -5,6 +5,18 @@
   background-size: cover;
   min-height: 825px;
   position: relative;
+  background-color: $background-dark;
+}
+
+.promo__form p {
+  margin: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  color: $white;
+  text-align: center;
 }
 
 .promo__container {
@@ -21,7 +33,7 @@
   width: 42%;
 }
 
-.promo__head {
+.promo__about-us h1 {
   margin: 0;
   padding-top: 26px;
   padding-bottom: 24px;
@@ -31,7 +43,7 @@
   color: $white;
 }
 
-.promo__desc {
+.promo__about-us p {
   margin: 0;
   padding: 0;
   color: $white;
@@ -52,19 +64,19 @@
     background-size: contain;
   }
 
-  .promo__head {
+  .promo__about-us h1 {
     font-size: 30px;
     line-height: 42px;
     padding-top: 0;
     padding-bottom: 20px;
   }
 
-  .promo__desc {
+  .promo__about-us p {
     font-size: 18px;
     line-height: 32px;
   }
 
-  .promo__logo {
+  .promo__about-us a {
     display: none;
   }
 
@@ -90,6 +102,15 @@
     background-color: $white;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo__form p {
+    width: 44%;
+    font-size: 18px;
+    padding-bottom: 30px;
+    color: $black;
   }
 }
 
@@ -100,10 +121,16 @@
 
   .promo__about-us {
     padding-top: 120px;
+    padding-bottom: 70px;
     width: 87%;
   }
 
   .promo__form {
-    padding-top: 60px;
+    padding-top: 70px;
+  }
+
+  .promo__form p {
+    padding-bottom: 20px;
+    width: 287px;
   }
 }

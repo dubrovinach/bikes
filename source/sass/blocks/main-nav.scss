@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.main-nav__wrapper {
+.main-nav__container div {
   display: none;
 }
 
@@ -29,28 +29,28 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.main-nav__arrow {
+.main-nav__list li a svg {
   display: none;
 }
 
-.main-nav__item {
+.main-nav__list li {
   padding-bottom: 9px;
-
-  &:nth-child(4n + 4) {
-    padding-right: 0;
-  }
 }
 
-.main-nav__link {
+.main-nav__list li a {
   text-decoration: none;
   font-size: 16px;
   line-height: 32px;
   font-weight: 300;
   color: $white;
+
+  &:hover {
+    color: $green-accent;
+  }
 }
 
 @media (max-width: $tablet-width) {
-  .main-nav__link {
+  .main-nav__list li a {
     display: block;
     padding-top: 17px;
     padding-bottom: 6px;
@@ -63,7 +63,7 @@
     width: 100%;
   }
 
-  .main-nav__logo {
+  .main-nav__container div a {
     display: none;
   }
 
@@ -77,7 +77,7 @@
     border-bottom: none;
   }
 
-  .main-nav__item {
+  .main-nav__list li {
     position: relative;
     width: 100%;
     margin-bottom: 30px;
@@ -91,16 +91,16 @@
     background-color: $white;
   }
 
-  .main-nav__wrapper {
+  .main-nav__container div {
     display: flex;
     width: auto;
   }
 
-  .main-nav__toggle {
+  .main-nav__container div button {
     margin-left: auto;
   }
 
-  .main-nav__arrow {
+  .main-nav__list li a svg {
     display: block;
     position: absolute;
     top: 30%;
@@ -119,17 +119,17 @@
     background-color: transparent;
   }
 
-  .main-nav--closed .main-nav__logo {
+  .main-nav--closed .main-nav__container div a {
     display: block;
     padding-top: 25px;
     padding-left: 21px;
   }
 
-  .main-nav--closed .main-nav__toggle {
+  .main-nav--closed .main-nav__container div button {
     display: block;
   }
 
-  .main-nav--nojs .main-nav__toggle {
+  .main-nav--nojs .main-nav__container div button {
     display: none;
   }
 
@@ -138,13 +138,13 @@
     padding-top: 100px;
   }
 
-  .main-nav--nojs .main-nav__logo {
+  .main-nav--nojs .main-nav__container div a {
     display: none;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .main-nav--closed .main-nav__logo {
+  .main-nav--closed .main-nav__container div a {
     padding-top: 25px;
     padding-left: 16px;
   }

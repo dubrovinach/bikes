@@ -1,37 +1,23 @@
-.form__desc {
-  margin: 0;
-  padding-bottom: 20px;
-  font-size: 17px;
-  line-height: 28px;
-  font-weight: 600;
-  color: $white;
-  text-align: center;
-}
-
-.form__fieldset {
+.form fieldset {
   border: none;
   margin: 0;
   padding: 0;
+}
+
+.form button {
+  &:hover {
+    background-color: $white;
+  }
 }
 
 @media (max-width: $tablet-width) {
   .form {
     width: 42.1%;
   }
-
-  .form__desc {
-    font-size: 18px;
-    padding-bottom: 30px;
-    color: $black;
-  }
 }
 
 @media (max-width: $mobile-width) {
   .form {
     width: 287px;
-  }
-
-  .form__desc {
-    padding-bottom: 20px;
   }
 }

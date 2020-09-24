@@ -5,14 +5,11 @@
   background-color: $background-light-grey;
 }
 
-.kinds-of-bikes__container {
-  margin-left: 5.2%;
-  margin-right: 3.2%;
-}
-
 .kinds-of-bikes__list {
   padding: 0;
   margin: 0;
+  margin-left: 5.2%;
+  margin-right: 3.3%;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -20,7 +17,7 @@
   flex-wrap: wrap;
 }
 
-.kinds-of-bikes__head {
+.kinds-of-bikes__container h2 {
   margin: 0;
   margin-left: 28.5%;
   width: 40%;
@@ -36,12 +33,7 @@
     padding-bottom: 19px;
   }
 
-  .kinds-of-bikes__container {
-    margin-left: 8.4%;
-    margin-right: 8.3%;
-  }
-
-  .kinds-of-bikes__head {
+  .kinds-of-bikes__container h2 {
     margin-left: 30%;
     padding-bottom: 30px;
     font-size: 24px;
@@ -51,17 +43,24 @@
 
   .kinds-of-bikes__list {
     justify-content: space-around;
+    margin-right: 8.2%;
+    margin-left: 8.3%;
   }
 }
 
 @media (max-width: $mobile-width) {
   .kinds-of-bikes {
     padding-top: 47px;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
   }
 
-  .kinds-of-bikes__head {
+  .kinds-of-bikes__container h2 {
     margin: 0;
     width: 100%;
+  }
+
+  .kinds-of-bikes__container {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
