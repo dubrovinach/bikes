@@ -121,7 +121,7 @@
 
   .main-nav--closed .main-nav__container div a {
     display: block;
-    padding-top: 25px;
+    padding-top: 22px;
     padding-left: 21px;
   }
 
@@ -145,7 +145,6 @@
 
 @media (max-width: $mobile-width) {
   .main-nav--closed .main-nav__container div a {
-    padding-top: 25px;
     padding-left: 16px;
   }
 }

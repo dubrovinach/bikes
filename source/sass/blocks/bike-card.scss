@@ -1,6 +1,6 @@
 .bike-card {
   position: relative;
-  width: 342px;
+  width: 30.4%;
 }
 
 .bike-card--road {
@@ -145,6 +145,14 @@
   .bike-card--kid {
     &::after {
       right: -16px;
+    }
+  }
+}
+
+@media (max-width: $transition-point-max) {
+  .bike-card--mountain {
+    &::after {
+      display: none;
     }
   }
 }
