@@ -131,7 +131,7 @@
             <p>Дорожный велосипед</p>
           </li>
           <li class="bike-card bike-card--mountain">
-            <picture>
+            <!-- <picture>
               <source type="image/webp" media="(max-width: 1023px)"
                 srcset="img/mountain-bike-mobile.webp 1x, img/mountain-bike-mobile-2x.webp 2x">
               <source type="image/webp"
@@ -141,7 +141,11 @@
                 srcset="img/mountain-bike-mobile.jpg 1x, img/mountain-bike-mobile-2x.jpg 2x">
               <img src="img/mountain-bike-desktop.jpg" srcset="img/mountain-bike-desktop-2x.jpg 2x"
                 alt="Горный велосипед">
-            </picture>
+            </picture> -->
+            <img srcset="img/mountain-bike-mobile.jpg 270w,
+              img/mountain-bike-mobile-2x.jpg 270w,
+              img/mountain-bike-desktop-2x.jpg 342w" sizes="(max-width: 1023px) 270px,
+            (min-width: 1024px) 342px" src="img/mountain-bike-desktop.jpg" alt="Горный велосипед">
             <p>Горный велосипед</p>
           </li>
           <li class="bike-card bike-card--kid">
@@ -163,8 +167,17 @@
         <h2><a id="video"></a>Видео про велосипеды</h2>
         <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__player">
-          <img srcset="img/video-mobile.jpg 270w,img/video-tablet.jpg 503w,img/video-desktop.jpg 929w" sizes="(max-width: 767px) 288px,
-            (max-width: 1024px) 440px, 800px" src="img/video-mobile.jpg" alt="Выбор велосипеда">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/video-mobile.webp 1x, img/video-mobile-2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/video-tablet.webp 1x, img/video-tablet-2x.webp 2x">
+            <source type="image/webp" srcset="img/video-desktop.webp 1x, img/video-desktop-2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/video-mobile.jpg 1x, img/video-mobile-2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/video-tablet.jpg 1x, img/video-tablet-2x.jpg 2x">
+            <img src="img/video-desktop.jpg" srcset="img/video-desktop-2x.jpg" alt="Выбор велосипеда">
+          </picture>
           <button type="button" class="video__button">
             <span class="visually-hidden">Включить видео</span>
           </button>
