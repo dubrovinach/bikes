@@ -6,6 +6,10 @@
   min-height: 825px;
   position: relative;
   background-color: $background-dark;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/promo-desktop-2x.jpg");
+  }
 }
 
 .promo__form p {
@@ -62,6 +66,10 @@
     min-height: 340px;
     background-image: url("../../img/promo-tablet.jpg");
     background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/promo-tablet-2x.jpg");
+    }
   }
 
   .promo__about-us h1 {
@@ -117,6 +125,10 @@
 @media (max-width: $mobile-width) {
   .promo {
     background-image: url("../../img/promo-mobile.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/promo-mobile-2x.jpg");
+    }
   }
 
   .promo__about-us {
