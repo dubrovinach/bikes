@@ -1,5 +1,5 @@
 .promo {
-  background-image: url("../../img/promo-desktop.jpg");
+  background-image: url("../img/promo-desktop.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -8,7 +8,7 @@
   background-color: $background-dark;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/promo-desktop-2x.jpg");
+    background-image: url("../img/promo-desktop-2x.jpg");
   }
 }
 
@@ -24,9 +24,10 @@
 }
 
 .promo__container {
-  width: 71.4%;
-  padding-top: 25.6%;
-  padding-bottom: 15%;
+  padding-top: 315px;
+  padding-bottom: 200px;
+  padding-left: 175px;
+  padding-right: 175px;
   display: flex;
   flex-direction: row;
   min-height: inherit;
@@ -34,7 +35,7 @@
 }
 
 .promo__about-us {
-  width: 42%;
+  width: 48%;
 }
 
 .promo__about-us h1 {
@@ -64,11 +65,11 @@
 @media (max-width: $tablet-width) {
   .promo {
     min-height: 340px;
-    background-image: url("../../img/promo-tablet.jpg");
+    background-image: url("../img/promo-tablet.jpg");
     background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/promo-tablet-2x.jpg");
+      background-image: url("../img/promo-tablet-2x.jpg");
     }
   }
 
@@ -89,8 +90,7 @@
   }
 
   .promo__container {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -124,10 +124,10 @@
 
 @media (max-width: $mobile-width) {
   .promo {
-    background-image: url("../../img/promo-mobile.jpg");
+    background-image: url("../img/promo-mobile.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/promo-mobile-2x.jpg");
+      background-image: url("../img/promo-mobile-2x.jpg");
     }
   }
 

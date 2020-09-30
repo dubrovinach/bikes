@@ -1,12 +1,11 @@
 .connection {
   padding-top: 32px;
-  padding-bottom: 98px;
-  margin-left: 27%;
-  margin-right: 28.5%;
+  margin-left: 14.7%;
+  margin-right: 8.5%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  padding-bottom: 98px;
 }
 
 .connection div {
@@ -14,6 +13,7 @@
   flex-direction: row;
   align-items: center;
   padding-bottom: 20px;
+  padding-right: 9.7%;
 }
 
 .connection div svg {
@@ -36,6 +36,11 @@
   .connection {
     margin-left: 13.6%;
     margin-right: 15%;
+    justify-content: space-between;
+  }
+
+  .connection div {
+    padding-right: 0;
   }
 }
 
@@ -51,6 +56,7 @@
 
   .connection div {
     padding-bottom: 22px;
+    padding-right: 0;
 
     &:first-child {
       padding-right: 0;

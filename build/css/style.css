@@ -33,8 +33,8 @@
   color: #000000;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
   width: 100%;
   border: none;
   background-color: #0ad9c6;
@@ -137,7 +137,8 @@ html {
 
 .main-nav__container {
   min-height: 83px;
-  width: 71%;
+  padding-left: 179px;
+  padding-right: 177px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,7 +176,10 @@ html {
   display: none; }
 
 .main-nav__list li {
-  padding-bottom: 9px; }
+  padding-bottom: 9px;
+  padding-right: 10%; }
+  .main-nav__list li:nth-child(4) {
+    padding-right: 0; }
 
 .main-nav__list li a {
   text-decoration: none;
@@ -191,7 +195,7 @@ html {
     display: block;
     padding-top: 17px;
     padding-bottom: 6px;
-    padding-left: 15px;
+    padding-left: 5%;
     color: #48494d;
     text-decoration: none;
     font-size: 20px;
@@ -215,9 +219,12 @@ html {
     position: relative;
     width: 100%;
     margin-bottom: 30px;
-    background-color: #f6f6f6; }
+    background-color: #f6f6f6;
+    padding-right: 0; }
   .main-nav__container {
     width: auto;
+    padding-left: 0;
+    padding-right: 0;
     min-height: 50px;
     display: block;
     background-color: #ffffff; }
@@ -233,6 +240,12 @@ html {
     position: absolute;
     top: 30%;
     right: 5%; }
+  .main-nav--opened {
+    position: fixed;
+    height: 100%;
+    z-index: 4; }
+  .main-nav--opened .main-nav__container {
+    height: 100%; }
   .main-nav--nojs {
     position: static; }
   .main-nav--closed .main-nav__list {
@@ -258,7 +271,7 @@ html {
     padding-left: 16px; } }
 
 .promo {
-  background-image: url("../../img/promo-desktop.jpg");
+  background-image: url("../img/promo-desktop.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -267,7 +280,7 @@ html {
   background-color: #131314; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .promo {
-      background-image: url("../../img/promo-desktop-2x.jpg"); } }
+      background-image: url("../img/promo-desktop-2x.jpg"); } }
 
 .promo__form p {
   margin: 0;
@@ -280,9 +293,10 @@ html {
   text-align: center; }
 
 .promo__container {
-  width: 71.4%;
-  padding-top: 25.6%;
-  padding-bottom: 15%;
+  padding-top: 315px;
+  padding-bottom: 200px;
+  padding-left: 175px;
+  padding-right: 175px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -296,7 +310,7 @@ html {
           justify-content: space-between; }
 
 .promo__about-us {
-  width: 42%; }
+  width: 48%; }
 
 .promo__about-us h1 {
   margin: 0;
@@ -322,11 +336,11 @@ html {
 @media (max-width: 1023px) {
   .promo {
     min-height: 340px;
-    background-image: url("../../img/promo-tablet.jpg");
+    background-image: url("../img/promo-tablet.jpg");
     background-size: contain; } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .promo {
-      background-image: url("../../img/promo-tablet-2x.jpg"); } }
+      background-image: url("../img/promo-tablet-2x.jpg"); } }
 
 @media (max-width: 1023px) {
   .promo__about-us h1 {
@@ -340,8 +354,7 @@ html {
   .promo__about-us a {
     display: none; }
   .promo__container {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -381,10 +394,10 @@ html {
 
 @media (max-width: 767px) {
   .promo {
-    background-image: url("../../img/promo-mobile.jpg"); } }
+    background-image: url("../img/promo-mobile.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .promo {
-      background-image: url("../../img/promo-mobile-2x.jpg"); } }
+      background-image: url("../img/promo-mobile-2x.jpg"); } }
 
 @media (max-width: 767px) {
   .promo__about-us {
@@ -424,7 +437,7 @@ html {
   padding-bottom: 10px;
   padding-left: 29px;
   width: 100%;
-  padding-right: 20px;
+  padding-right: 2px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400; }
@@ -448,7 +461,7 @@ html {
 .facts {
   text-align: center;
   padding-top: 150px;
-  padding-bottom: 118px; }
+  padding-bottom: 98px; }
 
 .facts__list {
   list-style: none;
@@ -495,7 +508,8 @@ html {
 
 .facts__item {
   text-align: center;
-  width: 22%; }
+  width: 22%;
+  margin-bottom: 20px; }
 
 @media (max-width: 1023px) {
   .facts {
@@ -518,7 +532,8 @@ html {
             justify-content: space-between; }
   .facts__item {
     padding-bottom: 40px;
-    width: 48%; } }
+    width: 48%;
+    margin-bottom: 0; } }
 
 @media (max-width: 767px) {
   .facts {
@@ -817,7 +832,10 @@ html {
   .video {
     min-height: 384px;
     padding-top: 83px;
-    position: relative; }
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .video__player img {
     position: static;
     -webkit-transform: none;
@@ -925,21 +943,17 @@ html {
 
 .connection {
   padding-top: 32px;
-  padding-bottom: 98px;
-  margin-left: 27%;
-  margin-right: 28.5%;
+  margin-left: 14.7%;
+  margin-right: 8.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 98px; }
 
 .connection div {
   display: -webkit-box;
@@ -952,7 +966,8 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  padding-right: 9.7%; }
 
 .connection div svg {
   margin-right: 15px; }
@@ -969,7 +984,12 @@ html {
 @media (max-width: 1023px) {
   .connection {
     margin-left: 13.6%;
-    margin-right: 15%; } }
+    margin-right: 15%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .connection div {
+    padding-right: 0; } }
 
 @media (max-width: 767px) {
   .connection {
@@ -985,7 +1005,8 @@ html {
     margin-left: 9.6%;
     margin-right: 7%; }
   .connection div {
-    padding-bottom: 22px; }
+    padding-bottom: 22px;
+    padding-right: 0; }
     .connection div:first-child {
       padding-right: 0; }
   .connection__item--phone {
