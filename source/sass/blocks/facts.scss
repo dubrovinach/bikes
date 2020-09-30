@@ -1,7 +1,7 @@
 .facts {
   text-align: center;
   padding-top: 150px;
-  padding-bottom: 118px;
+  padding-bottom: 98px;
 }
 
 .facts__list {
@@ -47,6 +47,7 @@
 .facts__item {
   text-align: center;
   width: 22%;
+  margin-bottom: 20px;
 }
 
 @media (max-width: $tablet-width) {
@@ -77,6 +78,7 @@
   .facts__item {
     padding-bottom: 40px;
     width: 48%;
+    margin-bottom: 0;
   }
 }
 
