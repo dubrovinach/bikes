@@ -918,7 +918,7 @@ html {
 
 .map {
   text-align: center;
-  background-image: url("../../img/map-desktop.jpg");
+  background-image: url("../img/map-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto; }
@@ -928,14 +928,14 @@ html {
 
 @media (max-width: 1023px) {
   .map {
-    background-image: url("../../img/map-tablet.jpg");
+    background-image: url("../img/map-tablet.jpg");
     margin: 0 auto; }
   .map iframe {
     width: 91%; } }
 
 @media (max-width: 767px) {
   .map {
-    background-image: url("../../img/map-mobile.jpg");
+    background-image: url("../img/map-mobile.jpg");
     height: 250px; }
   .map iframe {
     width: 100%;
