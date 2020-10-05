@@ -1,6 +1,6 @@
 .map {
   text-align: center;
-  background-image: url("../../img/map-desktop.jpg");
+  background-image: url("../img/map-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -12,7 +12,7 @@
 
 @media (max-width: $tablet-width) {
   .map {
-    background-image: url("../../img/map-tablet.jpg");
+    background-image: url("../img/map-tablet.jpg");
     margin: 0 auto;
   }
 
@@ -23,7 +23,7 @@
 
 @media (max-width: $mobile-width) {
   .map {
-    background-image: url("../../img/map-mobile.jpg");
+    background-image: url("../img/map-mobile.jpg");
     height: 250px;
   }
 
